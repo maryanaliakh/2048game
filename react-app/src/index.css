@@ -1,0 +1,75 @@
+.app {
+    text-align: center;
+    font-size: 30px; /* Основний шрифт 30px */
+    color: #3f3830;
+}
+
+body{
+    background-color: #D0D8A8;
+}
+
+/* Загальний контейнер */
+.background {
+    background: #776e65;
+    padding: 15px;
+    border-radius: 10px;
+    width: fit-content;
+    margin: 20px auto;
+}
+
+/* Ряд */
+.background > div {
+    display: flex;
+}
+
+/* Клітинка */
+.cell {
+    width: 70px;
+    height: 70px;
+    background: #F3EDE6;
+    margin: 5px;
+    border-radius: 6px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 30px; /* Змінили на 30px */
+    font-weight: bold;
+    color: #776e65;
+}
+
+/* WIN / GAME OVER картки */
+.win-card, .gameover-card {
+    position: fixed;
+    top: 34%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: whitesmoke; /* трішки щільніше */
+    padding: 40px 60px;  /* відступи більші, щоб виглядало пропорційно */
+    border-radius: 15px;
+    color: #776e65;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.35); /* сильніша тінь */
+    text-align: center;
+    font-size: 70px;      /* 30px для тексту */
+    font-weight: bold;
+    z-index: 100;
+}
+
+/* Кнопки */
+button {
+    margin: 4px;
+    padding: 12px 20px;   /* трохи більші для відповідності 30px */
+    font-size: 20px;      /* однаковий розмір шрифту */
+    cursor: pointer;
+    border-radius: 15px;
+    border: none;
+    background-color: #DB7093;
+    color: white;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #C0557D;
+    color: white;
+}
